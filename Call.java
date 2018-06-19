@@ -44,7 +44,15 @@ Public Class Call {
     public int getCallState() {
         return mCallState;
     }
-    
+
+    public void setCallState(int state) {
+        if(state < 0) {
+            Log.i(TAG, "state = " + state + " is valid, do nothing!");
+	} else {
+            mState = state;
+        }
+    }
+
     public long getTimes() {
         return mTimes;
     }
