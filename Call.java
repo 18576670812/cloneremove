@@ -1,4 +1,8 @@
+import android.text.TextUtils;
+import android.util.Log;
+
 Public Class Call {
+    private static final String TAG = "Call"
     String mNumber;
     String mDisplayName;
     int mCallState;
@@ -14,6 +18,14 @@ Public Class Call {
     
     public String getNumber() {
         return mNumber;
+    }
+
+    public void setNumber(String number) {
+        if(!TextUtils.isEmpty(number)) {
+	    mNumber = number;
+	} else {
+            Log.i("number is null or number is empty, do nothing!");
+	}
     }
 
     public String getDisplayName() {
