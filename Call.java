@@ -1,4 +1,5 @@
 Public Class Call {
+    public static final String TAG = "Call";
     String mNumber;
     String mDisplayName;
     int mCallState;
@@ -18,6 +19,14 @@ Public Class Call {
 
     public String getDisplayName() {
         return mDisplayName;
+    }
+
+    public void setDisplayName(String name) {
+        if(!TextUtils.isEmpty(name)) {
+            mDisplayName = name;
+	} else {
+            Log.i(TAG, "name is null or name is empty, do nothing!");
+	}
     }
     
     public int getCallState() {
