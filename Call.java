@@ -25,7 +25,7 @@ Public Class Call {
         if(!TextUtils.isEmpty(number)) {
 	    mNumber = number;
 	} else {
-            Log.i("number is null or number is empty, do nothing!");
+            Log.i(TAG, "number is null or number is empty, do nothing!");
 	}
     }
 
