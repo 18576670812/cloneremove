@@ -56,4 +56,8 @@ Public Class Call {
     public long getTimes() {
         return mTimes;
     }
+	
+    public void updateTimes(long times) {
+        mTimes = times;
+    }
 }
