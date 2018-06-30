@@ -64,4 +64,8 @@ Public Class Call {
     public void setEndTime(long end) {
         mEndTime = end;
     }
+
+    public void updateTimes(long times) {
+        mTimes = times;
+    }
 }
