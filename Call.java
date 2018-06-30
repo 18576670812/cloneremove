@@ -56,4 +56,12 @@ Public Class Call {
     public long getTimes() {
         return mTimes;
     }
+
+    public void setStartTime(long start) {
+        mStartTime = start;
+    }
+
+    public void setEndTime(long end) {
+        mEndTime = end;
+    }
 }
