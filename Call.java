@@ -1,3 +1,8 @@
+/*
+ * Class Description: this object is used to descripte one call. include following information:
+ * call number; the user name, call state, start and end time, and talk duration.
+ * */
+
 Public Class Call {
     public static final String TAG = "Call";
     String mNumber;
